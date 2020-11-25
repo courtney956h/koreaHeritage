@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+img { vertical-align: middle; }
+.blind { position: absolute;
+    text-indent: -9999999px;
+    width: 0; height: 0; 
+    overflow: hidden; }
+body { font-family: 'Noto Sans KR'; }
+.cf:after, .cf:before { content: ''; clear: both;
+    display: block; }
+.row { max-width: 1170px; margin: 0 auto; }
+
+
+
+/* index.html */
+/* header */
+#header { background: #fff;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    padding: 10px 20px; 
+    position: fixed; 
+    width: 100%;
+    z-index: 99999; }
+.header_container { display: flex;
+    justify-content: space-between; }
+
+.logo, .header_nav, .sns_nav, .search_box { align-self: center;}
+
+
+.header_nav .depth1 { display: flex; }
+.header_nav .depth1 li { padding: 0 15px; }
+.sns_nav ul { display: flex; }
+.sns_nav ul li { background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px 9px;
+    width: 35px; height: 35px;
+    margin: 0 8px; 
+    font-size: 15px; }
+.sns_nav ul li:nth-child(2) { padding: 5px 12px;}
+
+.search_box input { border: none; 
+    border-bottom: 1px solid #ddd;
+    width: 180px;
+    height: 30px; }
+.search_box button { background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px; 
+    width: 35px; height: 35px;
+    font-size: 15px; }
+
+
+/* footer */
+.quick_menu { position: fixed; 
+    bottom: 0; left: 0;
+    height: 30px; width: 100%;
+    background: #6c665b;
+    color: #fff; }
+.quick_menu ul li { display: inline-block; 
+    border-right: 1px solid #595348; 
+    padding: 0 10px; 
+    font-size: 13px;
+    }
+.quick_menu ul li:last-child { border-right: none; }
+
+
+/* article1 */
+
+/* main_content*/
+.article1 { position: relative; height: 90vh; }
+.main_bg { height: 100%; 
+    background: url(../images/main.jpg) no-repeat left bottom;
+    background-size: cover; }
+.main_text { position: absolute;
+    left: 20%; top: 50%;
+    transform: translateY(-50%);
+    color: #fff; 
+    font-family: 'Roboto'; }
+.main_text h2 { font-size: 70px;
+    padding: 20px 0; }
+.main_text p { font-size: 25px; }
+.main_text button { border: 2px solid #fff;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; 
+    border-radius: 50px;
+    margin-top: 50px;
+    padding: 10px 20px; }
+
+
+
+
+
+
+
+/* article2 */
+.slideOuter { padding: 80px 0; 
+    position: relative; 
+    text-align: center; }
+.slideOuter h2 { padding: 20px 0;
+    font-size: 25px; }
+.slideOuter h2:before { content: '';
+    position: absolute;
+    top: 90px; left: 48%;
+    width: 50px; height: 3px;
+    background: #6c665b; }
+
+
+.slideOuter .slick-slide { opacity: 0.5;
+    transform: scale(0.8); 
+    transition: all 0.5s; }
+.slideOuter .slick-slide.slick-active { opacity: 1; }
+.slideOuter .slick-slide.slick-active.slick-current { transform: scale(1); }
+
+.slideOuter .slick-dots { display:none; }
+
+.slideOuter .marrow { background: transparent;
+    border: none;
+    font-size: 30px;
+    color: #595348; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+.slideOuter .prevArrow { left: -20px;
+    z-index: 999999; }
+.slideOuter .nextArrow { right: -20px; }
+.slideInner { height: 200px;}
+.slideInner a img { width: 100%;
+    box-shadow: 2px 2px 2px #ddd; }
+
+
+/* article3 */
+.cal_container h3 { padding-bottom: 10px;
+    font-size: 18px; 
+    display: inline-block; }
+.cal_container p { font-size: 13px;
+    display: inline-block; }
+/* #calendar는 calendar.css 참고 */
+
+
+
+/* article4 */
+.article4 { display: flex; 
+    position: relative; }
+
+
+
+.img_container { width: 50%; }
+    
+.img_bg h3 { font-size: 30px;
+    color: #fff; 
+    position: absolute;
+    top: 45%; left: 20%; }
+.img_bg:before {content: '';
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background: rgba(0,0,0,0.5); }
+.img_bg img { width: 100%; }
+
+
+
+.direct { width: 50%;  
+    padding: 50px;
+    background: #e5ded3; 
+    z-index: 1;}
+.direct_list { border: 1px solid #595348;
+    display: flex; }
+.direct_list i { font-size: 30px;}
+
+
+
+
+
