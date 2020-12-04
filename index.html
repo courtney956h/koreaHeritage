@@ -24,33 +24,90 @@
                         <img src="images/logo.gif" alt="">
                     </div>
     
-                    <div class="header_nav">
-                        <ul class="depth1">
-                            <li><a href="#">문화행사</a></li>
-                            <li><a href="#">문화유산정보</a></li>
-                            <li><a href="#">참여문화</a></li>
-                            <li><a href="#">문화공간</a></li>
-                            <li><a href="#">정보공개</a></li>
-                            <li><a href="#">재단소개</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="sns_nav">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fas fa-blog"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="search_box">
-                        <input type="text" name="search" id="search">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                    <div class="nav">
+                        <div class="header_left">
+                            <ul class="depth1">
+                                <li><a href="#">문화행사</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">문화달력</a></li>
+                                        <li><a href="#">고궁행사</a></li>
+                                        <li><a href="#">경연대회</a></li>
+                                        <li><a href="#">공항행사</a></li>
+                                        <li><a href="#">공연&전시</a></li>
+                                        <li><a href="#">교육&체험</a></li>
+                                        <li><a href="#">전통음식</a></li>
+                                        <li><a href="#">문화상품</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">문화유산정보</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">문화유산이야기</a></li>
+                                        <li><a href="#">츌판&자료</a></li>
+                                        <li><a href="#">문화재조사연구</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">참여문화</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">국제문화교류</a></li>
+                                        <li><a href="#">재단기부금</a></li>
+                                        <li><a href="#">대외협력</a></li>
+                                        <li><a href="#">전승지원사업</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">문화공간</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">국가무형문화재<br>전수교육관</a></li>
+                                        <li><a href="#">한국의집</a></li>
+                                        <li><a href="#">한국문화의집</a></li>
+                                        <li><a href="#">인천공항<br>한국전통문화센터</a></li>
+                                        <li><a href="#">고궁편의시설</a></li>
+                                        <li><a href="#">대관안내</a></li>
+                                        <li><a href="#">독서당</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">정보공개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">정보공개신청 및 조회</a></li>
+                                        <li><a href="#">정보공개 청구 및 절차</a></li>
+                                        <li><a href="#">수수료 안내</a></li>
+                                        <li><a href="#">비공개정보 안내</a></li>
+                                        <li><a href="#">정보공개방법</a></li>
+                                        <li><a href="#">(사전)정보공개 목록</a></li>
+                                        <li><a href="#">사업실명제</a></li>
+                                        <li><a href="#">공공데이터 신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">재단소개</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">한국문화재재단</a></li>
+                                        <li><a href="#">경영공시</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">참여마당</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="header_right">
+                            <div class="sns_nav">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-blog"></i></a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="search_box">
+                                <input type="text" name="search" id="search">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-
 
         <section id="container">
             <div id="content" class="mainContent">
@@ -65,7 +122,6 @@
                         <button>View More</button>
                     </div>
                 </article>
-
 
                 <article class="article2">
                     <div class="slideOuter row">
@@ -89,15 +145,209 @@
 
                 <article class="article3">
                     <div class="row">
-                        
                         <div class="cal_container">
-                            <h3>문화달력</h3>
-                            <p><a href="#">더보기 +</a></p>
+                            <div class="cal_top">
+                                <h3>문화달력</h3>
+                                <span><a href="#">더보기 +</a></span>
+                            </div>
                             <div id="calendar"></div>
                         </div>
 
-                        <div class="notice">
-                            <!-- 게시판 자리 -->
+                        <div class="board">
+                            <div class="noti_board">
+                                <div class="tabTit">
+                                    <ul>
+                                        <li class="on"><a href="#">공지사항</a></li>
+                                        <li><a href="#">입찰정보</a></li>
+                                        <li><a href="#">인재채용</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                    </ul>
+                                    <span><a href="#">더보기 +</a></span>
+                                </div>
+                                <div class="tabCont">
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">한국의집 전통음식 무료체험 : 퇴근하면 뭐하니? - 전통병과 체험</a></td>
+                                                    <td>2020.12.02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">한국의집 전통음식 무료체험 : 이번 주말엔 아이랑 뭐하지? - 전통 장/병과</a></td>
+                                                    <td>2020.12.02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">한국의집 전통음식 무료체험 : 숨은 전통 찾기 - 전통 김치/장 체험</a></td>
+                                                    <td>2020.12.02</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">한국의집 '고호재' 겨울다과</a></td>
+                                                    <td>2020.11.26</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2021년 한국문화재재단 법률고문 공개모집 공고</a></td>
+                                                    <td>2020.11.24</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 하반기 수탁상품 공모 선정 결과</a></td>
+                                                    <td>2020.11.24</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">라오스 문화유산 기록화용 광대역 3D 스캐너 기자재 구매 (긴급) 입찰 공고</a></td>
+                                                    <td>2020.11.18</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 궁궐 호위군 사열의식 첩종 영상 제작 입찰 공고</a></td>
+                                                    <td>2020.11.09</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">『2020년 창덕궁 달빛기행-찾아가는 소외계층 행사 운영 대행 용역』입찰 공고</a></td>
+                                                    <td>2020.10.19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">『2020 한국문화재재단 공예트렌드페어 참가 종합 운영대행사』입찰 (재공고)</a></td>
+                                                    <td>2020.10.07</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">『2020년 한국무형문화재 주간 전시·체험장 제작』 입찰 재 공고</a></td>
+                                                    <td>2020.10.05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020 한국문화재재단 공예트렌드페어 참가 종합운영대행 용역 입찰 공고</a></td>
+                                                    <td>2020.09.24</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">2020년 제4차 직원 공개채용 최종합격자 발표(일반분야)</a></td>
+                                                    <td>2020.11.19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 제4차 직원 공개채용 면접전형(일반분야) 안내</a></td>
+                                                    <td>2020.11.05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 제4차 직원 공개채용 필기전형(일반분야) 합격자 발표</a></td>
+                                                    <td>2020.11.04</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 3분기 채용 임직원 4촌 이내 친족 합격인원수 공개</a></td>
+                                                    <td>2020.10.30</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 제4차 직원 공개채용 서류전형(일반분야) 합격자 발표</a></td>
+                                                    <td>2020.10.29</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">2020년 제4차 직원 공개채용 최종합격자 발표(연구분야)</a></td>
+                                                    <td>2020.10.28</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">광대를 위하여, 강준섭(1125)</a></td>
+                                                    <td>2020.11.25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">몬스타엑스, 우리 문화유산의 해외 전도사 될 것(1120)</a></td>
+                                                    <td>2020.11.23</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">한국의 유네스코 세계문화유산을 김포공항에서 만나세요(1119)</a></td>
+                                                    <td>2020.11.19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">도깨비 마스크에 이어 새로운 우장 갖춘 경복궁 수문장(1117)</a></td>
+                                                    <td>2020.11.17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">넥슨, 문화유산 보존·전승 활성화에 기부(1116)</a></td>
+                                                    <td>2020.11.17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#">집에서 즐기는 궁궐 온라인 체험 궁온 프로그램 시작(1116)</a></td>
+                                                    <td>2020.11.16</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="event_board">
+                                <div class="tabTit">
+                                    <ul>
+                                        <li class="on"><a href="#">행사스케치</a></li>
+                                    </ul>
+                                    <span><a href="#">더보기 +</a></span>
+                                </div>
+                                <div class="tabCont">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/img1.jpg" alt="">
+                                                <p>한국의집 온정 나눔 캠페인</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/img2.jpg" alt="">
+                                                <p>가을 향 가득한 '궁궐 부엌, 생과방'</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/img3.jpg" alt="">
+                                                <p>제5회 궁중문화축전 개막제</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/img4.png" alt="">
+                                                <p>제5회 궁중문화축전 기자간담회</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                     </div>
@@ -137,12 +387,36 @@
                             <li>
                                 <a href="#">
                                     <i class="far fa-star"></i>
-                                    <p>국가무형문화재<br>
-                                        전승지원 사업<br>
+                                    <p>국가무형문화재 전승지원 사업<br>
                                         안내 및 신청
                                     </p>
                                 </a>
                             </l>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article5">
+                    <div class="row">
+                        <ul class="go_link">
+                            <li>
+                                <a href="#">
+                                    <img src="images/brochure.gif" alt="">
+                                    <p>재단브로셔</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/monthly.gif" alt="">
+                                    <p>월간문화재</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/cal.gif" alt="">
+                                    <p>궁궐프로그램안내</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -159,11 +433,65 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="footer_container">
+                <div class="row">
+                    <div class="footer_top">
+                        <ul class="foot_list1">
+                            <li><a href="#"><img src="images/foot_list1.gif" alt=""></a></li>
+                            <li><a href="#"><img src="images/foot_list2.gif" alt=""></a></li>
+                            <li><a href="#"><img src="images/foot_list3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/foot_list4.png" alt=""></a></li>
+                        </ul>
+                        <ul class="foot_list2">
+                            <li><a href="#"><img src="images/open_icon.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="images/WAmark_s.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_bottom">
+                        <div class="f_left">
+                            <ul class="info">
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">저작권방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">이메일무단수집거부</a></li>
+                                <li><a href="#">재단소개</a></li>
+                            </ul>
+                            <div class="address">
+                                <p>서울시 강남구 봉은사로 406(삼성동 112-2) 우편번호 06153</p>
+                                <p>전화번호 02) 566-6300 팩스번호 02) 566-5954</p>
+                            </div>
+                            <div class="copyright">
+                                <p>Copyright © 2013 Korea Cultural Heritage Foundation ALl right reserved.</p>
+                            </div>
+                        </div>
+                        <div class="f_right">
+                            <ul class="sns">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/footer_sns_btn1.gif" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/footer_sns_btn2.gif" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/footer_sns_btn3.gif" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
     
-    <script src="js/koreaheritage.js"></script>
+    <script src="js/myjquery.js"></script>
     <script src="js/calendar.js"></script>
 </body>
 </html>
