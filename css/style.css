@@ -15,7 +15,7 @@ body { font-family: 'Noto Sans KR'; }
     display: block; }
 .row { max-width: 1600px; 
     margin: 0 auto; 
-    padding: 0 80px; }
+    padding: 0 100px; }
 
 
 
@@ -45,7 +45,7 @@ body { font-family: 'Noto Sans KR'; }
 
 .header_left .depth2 { position: absolute;
     top: 100%; left: -35px;
-    width: 180px; height: auto;
+    width: 170px; height: auto;
     background: #e5ded3;
     margin: 10px;
     display: none; }
@@ -180,7 +180,7 @@ body { font-family: 'Noto Sans KR'; }
     font-size: 30px; }
 .slideOuter h2:before { content: '';
     position: absolute;
-    top: 90px; left: 48%;
+    top: 95px; left: 48.5%;
     width: 50px; height: 3px;
     background: #6c665b; }
 
@@ -200,9 +200,9 @@ body { font-family: 'Noto Sans KR'; }
     position: absolute;
     top: 50%;
     transform: translateY(-50%); }
-.slideOuter .prevArrow { left: -20px;
+.slideOuter .prevArrow { left: 80px;
     z-index: 99; }
-.slideOuter .nextArrow { right: -20px; }
+.slideOuter .nextArrow { right: 80px; }
 .slideInner { height: 100%; }
 .slideInner a img { width: 100%;
     box-shadow: 2px 2px 2px #ddd; }
@@ -213,7 +213,8 @@ body { font-family: 'Noto Sans KR'; }
 .article3 .row { display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;}
-.cal_container { width: 20%; }
+.cal_container { width: 20%;
+    padding-left: 30px; }
 .cal_container .cal_top { display: flex; }
 .cal_top h3 { padding: 7px;
     color: #6c665b;
