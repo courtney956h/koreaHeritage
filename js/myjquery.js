@@ -62,9 +62,61 @@
         })
     })
 
+    
+    // loading 화면
+    $(window).load(function() {
+        $('.loading').delay(2500).fadeOut(300);
+    });
 
 
+    // scroll 이벤트
+    var sct;
+    $(window).on('scroll', function() {
+        sct = $(this).scrollTop();
+    
+        //gotop 버튼 생성
+        if ( sct >= 300 ) {
+            $('.gotop').addClass('on').stop().animate({
+                opacity: '1'
+            }, 500)
+        } else {
+            $('.gotop').removeClass('on').stop().animate({
+                opacity: '0'
+            }, 500)
+        }
 
+
+        //gotop 클릭시 up
+        $('.gotop').on('click', function() {
+            $('html, body').stop().animate({
+                scrollTop:'0'
+            }, 800, 'linear')
+        })
+
+
+        // scroll 이벤트 발생하는 함수 호출
+        if ( $('#container').children().is('#content') ) { 
+            mainScroll() 
+        }
+    })
+
+    // scroll 이벤트 발생
+    function mainScroll() {
+        // article4 scroll animation
+        var art4Near = $('.article4').offset().top - $(this).height()
+        if ( sct >= art4Near ) {
+            $('.article4').addClass('on')
+        } else if ( sct === 0) {
+            $('.article4').removeClass('on')
+        }
+        // article5 scroll animation
+        var art5Near = $('.article5').offset().top - $(this).height()
+        if ( sct >= art5Near ) {
+            $('.article5').addClass('on')
+        } else if ( sct === 0) {
+            $('.article5').removeClass('on')
+        }
+    }
 
 
 })(jQuery)
