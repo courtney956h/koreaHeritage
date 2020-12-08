@@ -213,7 +213,7 @@ body { font-family: 'Noto Sans KR'; }
 .article3 .row { display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;}
-.cal_container { width: 25%;
+.cal_container { width: 330px;
     padding-left: 30px; }
 .cal_container .cal_top { display: flex; }
 .cal_top h3 { padding: 7px;
