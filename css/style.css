@@ -213,16 +213,16 @@ body { font-family: 'Noto Sans KR'; }
 .article3 .row { display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;}
-.cal_container { width: 23%;
+.cal_container { width: 25%;
     padding-left: 30px; }
 .cal_container .cal_top { display: flex; }
 .cal_top h3 { padding: 7px;
     color: #6c665b;
-    width: 70%; }
+    width: 80%; }
 .cal_top span { font-size: 13px;
     line-height: 40px;
     text-align: right; 
-    width: 30%; }
+    width: 20%; }
 /* #calendar는 calendar.css 참고 */
 .board { width: 70%; }
 .noti_board { padding: 7px 0;
